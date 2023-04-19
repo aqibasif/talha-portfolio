@@ -1,12 +1,8 @@
+import Home from "./pages/Home";
 import "./App.css";
 
 function App() {
-  return (
-    <div className='App'>
-      <span className='circle' />
-      <h1>I'm Talha Asif</h1>
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
