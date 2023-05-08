@@ -17,30 +17,30 @@ const Hero = () => {
       data-scroll
       data-scroll-section
       // data-scroll-repeat
-      // data-scroll-section-inview
+      data-scroll-section-inview
       className='hero'
     >
-      <div className='main-head' data-scroll >
+      <div className='main-head' data-scroll>
         <div
           data-scroll
           data-scroll-speed='5'
-          // data-scroll-delay='0.05'
+          data-scroll-delay='0.05'
           data-scroll-position='top'
         >
           <h1 className='main-heading'>THINKER</h1>
         </div>
         <div
           data-scroll
-          data-scroll-speed='3.5'
-          // data-scroll-delay='0.07'
+          data-scroll-speed='5'
+          data-scroll-delay='0.1'
           data-scroll-position='top'
         >
           <h1 className='main-heading2'>DESIGNER</h1>
         </div>
         <div
           data-scroll
-          data-scroll-speed='2'
-          // data-scroll-delay='0.09'
+          data-scroll-speed='5'
+          data-scroll-delay='0.2'
           data-scroll-position='top'
         >
           <h1 className='main-heading3'>DEVELOPER</h1>
@@ -50,7 +50,11 @@ const Hero = () => {
       {/* <div className='row'>
         <div className='col-md-3'></div>
         <div className='col-md-6 p-5'> */}
-      <div className='main-img' data-scroll>
+      <div
+        className='main-img'
+        data-scroll
+        data-scroll-call='dynamicBackground'
+      >
         <img
           // style={
           //   offsetY < window.innerHeight + 350

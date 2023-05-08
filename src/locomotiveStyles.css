@@ -2,11 +2,11 @@
 html.has-scroll-smooth {
   /* overflow: hidden; */
   overflow: hidden;
-  position: fixed;
+  /* position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 0; */
 }
 
 html.has-scroll-dragging {
@@ -22,6 +22,7 @@ html.has-scroll-dragging {
 
 .has-scroll-smooth [data-scroll-container] {
   min-height: 100vh;
+  perspective: 1px;
 }
 
 [data-scroll-direction="horizontal"] [data-scroll-container] {
@@ -39,7 +40,7 @@ html.has-scroll-dragging {
 
 .c-scrollbar {
   /* make it none to hide the scrollbar */
-  display: none;
+  /* display: none; */
 
   position: absolute;
   right: 0;

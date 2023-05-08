@@ -4,14 +4,14 @@ import Hero from "../components/Hero/Hero";
 
 const Home = () => {
   return (
-    <div
-      data-scroll
-      data-scroll-section
-      // data-scroll-section-inview
-      // data-scroll-repeat
-    >
+    <>
       <Hero />
-    </div>
+    </>
+    // data-scroll
+    // data-scroll-section
+    // data-scroll-section-inview
+    // data-scroll-repeat
+
     // <div className='App'>
     //   <div
     //     className='hero'
