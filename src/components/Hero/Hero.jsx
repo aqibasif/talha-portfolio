@@ -26,7 +26,7 @@ const Hero = () => {
       <div className='hero-headings' data-scroll>
         <div
           data-scroll
-          data-scroll-speed='2'
+          data-scroll-speed='3'
           data-scroll-delay='0.05'
           data-scroll-position='top'
         >
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
         <div
           data-scroll
-          data-scroll-speed='2.75'
+          data-scroll-speed='4'
           data-scroll-delay='0.1'
           data-scroll-position='top'
         >
@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
         <div
           data-scroll
-          data-scroll-speed='3.5'
+          data-scroll-speed='5'
           data-scroll-delay='0.2'
           data-scroll-position='top'
         >
@@ -56,7 +56,7 @@ const Hero = () => {
           src='/img/mocky.jpg'
           alt='Hero'
           data-scroll
-          data-scroll-speed='1'
+          data-scroll-speed='-1'
           data-scroll-postion='top'
         />
       </div>

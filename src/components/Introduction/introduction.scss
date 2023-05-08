@@ -1,0 +1,95 @@
+.intro {
+  padding: 120px 230px;
+  padding-top: 160px;
+  background-color: rgb(252, 252, 252);
+  transition: all ease-out 0.4s;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+
+  p {
+    font-size: 16px;
+    opacity: 0;
+    transform: translateY(75px);
+    transition: all ease-out 0.4s;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: bolder;
+    transform: translateY(-140%);
+    transition: all ease-out 0.4s;
+  }
+
+  &.is-inview {
+    p {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    h4 {
+      transform: translateY(0px);
+    }
+  }
+
+  i {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+}
+
+.intro .row {
+  max-width: calc(1280px - 380px);
+  margin: auto;
+}
+
+.intro div {
+  transition: all ease-out 0.4s;
+}
+
+.hide-heading {
+  /* opacity: 0; */
+  transform: translateY(-140%);
+  transition: all ease-out 0.4s;
+}
+
+.textbox {
+  overflow-y: hidden;
+}
+
+.textbox h4,
+.textbox p {
+  transition: all ease-out 0.4s;
+}
+
+.intro-light {
+  background-color: rgb(252, 252, 252);
+  transition: all ease-out 0.4s;
+}
+
+.intro-dark {
+  background-color: #1a1a1a;
+  transition: all ease-out 0.4s;
+}
+
+// .hide {
+//   opacity: 0;
+//   transform: translateY(75px);
+//   transition: all ease-out 0.4s;
+// }
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .intro {
+    padding: 120px 80px;
+    padding-top: 100px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .intro {
+    padding: 70px 30px;
+    padding-top: 100px;
+    grid-template-columns: 1fr;
+  }
+}
