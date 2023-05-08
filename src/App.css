@@ -98,17 +98,21 @@ html.has-scroll-dragging {
 
 .App {
   width: 100vw;
-}
-
-.hero {
-  /* min-height: 100vh; */
-  height: 250vh;
-  text-align: center;
+  height: 300vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 10px;
+}
+
+.hero {
+  /* min-height: 100vh; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .hero h1 {

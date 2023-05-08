@@ -5,11 +5,12 @@ import { useRef } from "react";
 
 function App() {
   const containerRef = useRef(null);
+  // const parallaxRef = useRef(null);
   // const [scrollEl, setScrollEl] = useState();
 
   const LocomotiveOptions = {
     smooth: true,
-    multiplier: 0.5,
+    multiplier: 1.5,
     lerp: 0.03,
     smartphone: {
       smooth: true,
@@ -20,21 +21,23 @@ function App() {
   };
 
   // useEffect(() => {
-  //   setScrollEl(containerRef.current);
+  //   setScrollEl(parallaxRef.current);
   // });
 
   return (
+    // <div className="my-scroll-container" ref={parallaxRef}>
+    //   <ParallaxProvider scrollContainer={scrollEl}>
     <LocomotiveScrollProvider
       watch={[]}
       options={LocomotiveOptions}
       containerRef={containerRef}
     >
       <main data-scroll-container ref={containerRef}>
-        {/* <ParallaxProvider scrollContainer={scrollEl}> */}
         <Home />
-        {/* </ParallaxProvider> */}
       </main>
     </LocomotiveScrollProvider>
+    //   </ParallaxProvider>
+    // </div>
   );
 }
 

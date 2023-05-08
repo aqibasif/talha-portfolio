@@ -14,12 +14,28 @@ const Home = () => {
   console.log("OFF", offsetY);
 
   return (
-    <div className='App' data-scroll-section data-scroll>
-      <div className='hero'>
+    <div className='App'>
+      <div
+        className='hero'
+        data-scroll
+        data-scroll-repeat
+        data-scroll-section
+        data-scroll-section-inview
+      >
         <span className='circle' />
         <h1
-        // data-scroll
-        // data-scroll-speed='1'
+          data-scroll
+          data-scroll-speed='0.6'
+          data-scroll-delay='0.03'
+          // data-scroll-position='top'
+        >
+          I'm Talha Asif
+        </h1>
+        <h1
+          data-scroll
+          data-scroll-speed='0.6'
+          data-scroll-delay='1.2'
+          // data-scroll-position='bottom'
         >
           I'm Talha Asif
         </h1>
@@ -65,7 +81,7 @@ const Home = () => {
             data-scroll-speed='1'
             style={{ position: "absolute", zIndex: "0" }}
           />
-          <h1 data-scroll data-scroll-speed='-0.6' style={{color: 'white'}}>
+          <h1 data-scroll data-scroll-speed='-0.6' style={{ color: "white" }}>
             Hi there
           </h1>
         </div>
