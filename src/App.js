@@ -6,8 +6,6 @@ import "./App.css";
 
 function App() {
   const containerRef = useRef(null);
-  // const parallaxRef = useRef(null);
-  // const [scrollEl, setScrollEl] = useState();
 
   const LocomotiveOptions = {
     smooth: true,
@@ -21,13 +19,7 @@ function App() {
     },
   };
 
-  // useEffect(() => {
-  //   setScrollEl(parallaxRef.current);
-  // });
-
   return (
-    // <div className="my-scroll-container" ref={parallaxRef}>
-    //   <ParallaxProvider scrollContainer={scrollEl}>
     <LocomotiveScrollProvider
       watch={[]}
       options={LocomotiveOptions}
@@ -37,8 +29,6 @@ function App() {
         <Home />
       </main>
     </LocomotiveScrollProvider>
-    //   </ParallaxProvider>
-    // </div>
   );
 }
 

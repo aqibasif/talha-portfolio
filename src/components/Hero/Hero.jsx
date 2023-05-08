@@ -1,17 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 import "./hero.scss";
 
 const Hero = () => {
-  // const [offsetY, setOffsetY] = useState(0);
+  const { scroll } = useLocomotiveScroll();
 
-  // const handleScroll = () => setOffsetY(window.pageYOffset);
+  console.log("SC", scroll);
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
-
+  // scroll?.on("scroll", (args) => {
+  //   // Get all current elements : args.currentElements
+  //   // if (typeof args.currentElements["hey"] === "object") {
+  //   //   let progress = args.currentElements["hey"].progress;
+  //   //   console.log(progress);
+  //   //   // ouput log example: 0.34
+  //   //   // gsap example : myGsapAnimation.progress(progress);
+  //   // }
+  // });
   return (
     <div
       data-scroll
@@ -23,7 +27,7 @@ const Hero = () => {
       <div className='main-head' data-scroll>
         <div
           data-scroll
-          data-scroll-speed='5'
+          data-scroll-speed='2'
           data-scroll-delay='0.05'
           data-scroll-position='top'
         >
@@ -31,7 +35,7 @@ const Hero = () => {
         </div>
         <div
           data-scroll
-          data-scroll-speed='5'
+          data-scroll-speed='2'
           data-scroll-delay='0.1'
           data-scroll-position='top'
         >
@@ -39,7 +43,7 @@ const Hero = () => {
         </div>
         <div
           data-scroll
-          data-scroll-speed='5'
+          data-scroll-speed='2'
           data-scroll-delay='0.2'
           data-scroll-position='top'
         >
@@ -53,7 +57,7 @@ const Hero = () => {
       <div
         className='main-img'
         data-scroll
-        data-scroll-call='dynamicBackground'
+        // data-scroll-call='dynamicBackground'
       >
         <img
           // style={
@@ -69,7 +73,7 @@ const Hero = () => {
           src='/img/mocky.jpg'
           alt='Hero'
           data-scroll
-          data-scroll-speed='1.5'
+          data-scroll-speed='0.5'
           data-scroll-postion='top'
         />
       </div>

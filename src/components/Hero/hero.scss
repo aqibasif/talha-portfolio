@@ -27,7 +27,8 @@
     font-weight: 500;
     padding: 0;
     margin: 0;
-    animation: 0.8s slide-in-up 0s cubic-bezier(0.61, 1, 0.88, 1) backwards;
+    animation: 0.8s slide-in-up 0s cubic-bezier(0, 0.01, 0.01, 1) backwards;
+    // animation: 0.8s slide-in-up 0s cubic-bezier(0.61, 1, 0.88, 1) backwards;
 
     &.main-heading {
       animation-delay: 0.1s;
@@ -47,7 +48,6 @@
 
 .main-img {
   width: 30vw;
-  // width: 100%;
   height: 600px;
   margin-top: 345px;
   display: flex;
@@ -56,26 +56,42 @@
   overflow: hidden;
   position: relative;
   margin-bottom: 450px;
-  animation: 1s slide-up 0s cubic-bezier(0.61, 1, 0.88, 1) both;
   border: 2px solid black;
 
+  &::after {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    animation: 0.5s slide-away-left 0.1s ease-out both;
+    right: 0;
+    bottom: 0;
+  }
+
   .hero-img {
-    // position: relative;
-    width: 130%;
-    transition: all cubic-bezier(0.61, 1, 0.88, 1) 0.4s;
+    width: 135%;
+    animation: 1.5s zoom-down 0s cubic-bezier(0, 0.01, 0.01, 1) both;
   }
 }
 
 // ====|  Animations  |====
 
-@keyframes slide-up {
+@keyframes slide-away-left {
   0% {
-    transform: translateY(50%) scale(0.7);
-    opacity: 0;
+    width: 100%;
   }
   100% {
-    transform: translateY(0%) scale(1);
-    opacity: 1;
+    width: 0%;
+  }
+}
+
+@keyframes zoom-down {
+  0% {
+    width: 180%;
+  }
+  100% {
+    width: 130%;
   }
 }
 
@@ -125,7 +141,7 @@
 
     // .main-img {
     width: 60vw;
-    height: 400px;
+    height: 360px;
     margin-top: 130px;
     // }
   }
