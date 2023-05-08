@@ -1,10 +1,8 @@
 .intro {
-  padding: 120px 230px;
-  padding-top: 160px;
-  background-color: rgb(252, 252, 252);
+  padding: 180px 230px;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  gap: 10px;
+  gap: 15px;
 
   .textbox {
     overflow-y: hidden;
@@ -16,19 +14,19 @@
       both;
 
     &.is-inview {
-      animation: 0.7s slide-up-paragraph 0.4s cubic-bezier(0, 0.01, 0.01, 1)
+      animation: 0.7s slide-up-paragraph 0.3s cubic-bezier(0, 0.01, 0.01, 1)
         both;
     }
   }
 
   h4 {
-    font-size: 24px;
-    font-weight: bolder;
-    animation: 0.7s slide-away-up-heading 0s cubic-bezier(0, 0.01, 0.01, 1)
-      both;
+    font-size: 28px;
+    // font-weight: bolder;
+    animation: 0.7s slide-away-up-heading 0s cubic-bezier(0, 0.01, 0.01, 1) both;
 
     &.is-inview {
-      animation: 0.7s slide-down-heading 0.55s cubic-bezier(0, 0.01, 0.01, 1) both;
+      animation: 0.7s slide-down-heading 0.45s cubic-bezier(0, 0.01, 0.01, 1)
+        both;
     }
   }
 
@@ -39,21 +37,13 @@
   }
 }
 
-// .intro-light {
-//   background-color: rgb(252, 252, 252);
-//   transition: all ease-out 0.4s;
-// }
+.intro-light {
+  background-color: rgb(240, 240, 240);
+}
 
-// .intro-dark {
-//   background-color: #1a1a1a;
-//   transition: all ease-out 0.4s;
-// }
-
-// .hide {
-//   opacity: 0;
-//   transform: translateY(75px);
-//   transition: all ease-out 0.4s;
-// }
+.intro-dark {
+  background-color: #1a1a1a;
+}
 
 // ====|  Animations  |====
 
@@ -101,8 +91,7 @@
 
 @media (min-width: 450px) and (max-width: 768px) {
   .intro {
-    padding: 120px 80px;
-    padding-top: 100px;
+    padding: 150px 80px;
     grid-template-columns: 1fr;
   }
 }
@@ -111,8 +100,7 @@
 
 @media (max-width: 450px) {
   .intro {
-    padding: 70px 30px;
-    padding-top: 100px;
+    padding: 100px 30px;
     grid-template-columns: 1fr;
   }
 }
