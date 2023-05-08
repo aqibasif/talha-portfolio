@@ -26,7 +26,7 @@
     line-height: 185px;
     padding: 0;
     margin: 0;
-    animation: 0.7s slide-in-up 0s cubic-bezier(0, 0.58, 0.31, 0.76) backwards;
+    animation: 0.8s slide-in-up 0s cubic-bezier(0.61, 1, 0.88, 1) backwards;
 
     &.main-heading {
       animation-delay: 0s;
@@ -55,13 +55,13 @@
   overflow: hidden;
   position: relative;
   margin-bottom: 450px;
-  animation: 0.8s slide-up 0.25s ease-out both;
+  animation: 1s slide-up 0.25s cubic-bezier(0.61, 1, 0.88, 1) both;
   border: 2px solid black;
 
   .hero-img {
     // position: relative;
     width: 130%;
-    transition: all ease-out 0.4s;
+    transition: all cubic-bezier(0.61, 1, 0.88, 1) 0.4s;
   }
 }
 
