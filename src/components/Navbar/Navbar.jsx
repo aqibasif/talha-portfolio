@@ -1,23 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./navbar.scss";
 
 const Navbar = () => {
-  // const [offsetY, setOffsetY] = useState(0);
-
-  // const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
-
   return (
-    <div className='navbar' data-scroll data-scroll-section>
+    <div data-scroll-section className='navbar'>
       <p
         className='pc-only'
         data-scroll
-        data-scroll-speed='-1'
+        data-scroll-speed='-3'
         data-scroll-delay='0.05'
         data-scroll-position='top'
       >
@@ -25,7 +15,7 @@ const Navbar = () => {
       </p>
       <p
         data-scroll
-        data-scroll-speed='-1'
+        data-scroll-speed='-3'
         data-scroll-delay='0.1'
         data-scroll-position='top'
       >
@@ -33,7 +23,7 @@ const Navbar = () => {
       </p>
       <p
         data-scroll
-        data-scroll-speed='-1'
+        data-scroll-speed='-3'
         data-scroll-delay='0.2'
         data-scroll-position='top'
         className='pc-only'

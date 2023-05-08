@@ -5,11 +5,12 @@ import Introduction from "../components/Introduction/Introduction";
 
 const Home = () => {
   return (
-    <div data-scroll data-scroll-section>
+    <>
+      {/* <div data-scroll data-scroll-section> */}
       <Navbar />
       <Hero />
       <Introduction />
-    </div>
+    </>
   );
 };
 

@@ -15,19 +15,19 @@ const Hero = () => {
   //   //   // gsap example : myGsapAnimation.progress(progress);
   //   // }
   // });
-  
+
   return (
     <div
-      data-scroll
+      // data-scroll
       data-scroll-section
-      data-scroll-section-inview
+      // data-scroll-section-inview
       className='hero'
     >
       <div className='hero-headings' data-scroll>
         <div
           data-scroll
           data-scroll-speed='3'
-          data-scroll-delay='0.05'
+          // data-scroll-delay='0.05'
           data-scroll-position='top'
         >
           <h1 className='heading-1'>THINKER</h1>
@@ -35,7 +35,7 @@ const Hero = () => {
         <div
           data-scroll
           data-scroll-speed='4'
-          data-scroll-delay='0.1'
+          // data-scroll-delay='0.1'
           data-scroll-position='top'
         >
           <h1 className='heading-2'>DESIGNER</h1>
@@ -43,7 +43,7 @@ const Hero = () => {
         <div
           data-scroll
           data-scroll-speed='5'
-          data-scroll-delay='0.2'
+          // data-scroll-delay='0.2'
           data-scroll-position='top'
         >
           <h1 className='heading-3'>DEVELOPER</h1>

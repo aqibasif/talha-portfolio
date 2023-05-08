@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useRef } from "react";
-import "./locomotiveStyles.css";
+import "./locomotive-scroll.css";
 
 function App() {
   const containerRef = useRef(null);
@@ -9,8 +9,8 @@ function App() {
   const LocomotiveOptions = {
     smooth: true,
     multiplier: 1.5,
-    touchMultiplier: 3,
-    lerp: 0.05,
+    // touchMultiplier: 3,
+    lerp: 0.04,
     smartphone: {
       smooth: true,
     },
