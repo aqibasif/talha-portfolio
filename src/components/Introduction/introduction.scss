@@ -14,7 +14,7 @@
       both;
 
     &.is-inview {
-      animation: 0.7s slide-up-paragraph 0.3s cubic-bezier(0, 0.01, 0.01, 1)
+      animation: 0.7s slide-up-paragraph 0.2s cubic-bezier(0, 0.01, 0.01, 1)
         both;
     }
   }
@@ -25,7 +25,7 @@
     animation: 0.7s slide-away-up-heading 0s cubic-bezier(0, 0.01, 0.01, 1) both;
 
     &.is-inview {
-      animation: 0.7s slide-down-heading 0.45s cubic-bezier(0, 0.01, 0.01, 1)
+      animation: 0.7s slide-down-heading 0.3s cubic-bezier(0, 0.01, 0.01, 1)
         both;
     }
   }

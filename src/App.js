@@ -9,7 +9,7 @@ function App() {
   const LocomotiveOptions = {
     smooth: true,
     multiplier: 1.5,
-    // touchMultiplier: 3,
+    touchMultiplier: 2.5, // testing now, old value was 3
     lerp: 0.04,
     smartphone: {
       smooth: true,
@@ -18,6 +18,26 @@ function App() {
       smooth: true,
     },
   };
+
+  // useEffect(() => {
+  //   const locoScroll = new LocomotiveScroll({
+  //     el: containerRef.current,
+  //    ...LocomotiveOptions
+  //   });
+  //   console.log("SC", locoScroll);
+
+  //   locoScroll?.on("scroll", (args) => {
+  //     console.log("A", args);
+
+  //     // Get all current elements : args.currentElements
+  //     // if (typeof args.currentElements["hey"] === "object") {
+  //     //   let progress = args.currentElements["hey"].progress;
+  //     //   console.log(progress);
+  //     //   // ouput log example: 0.34
+  //     //   // gsap example : myGsapAnimation.progress(progress);
+  //     // }
+  //   });
+  // });
 
   return (
     <LocomotiveScrollProvider

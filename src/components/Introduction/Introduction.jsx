@@ -7,8 +7,6 @@ const Introduction = ({ theme = "light" }) => {
       // className={`intro intro-${theme}`}
       className={`intro intro-${theme}`}
       data-scroll-section
-      // data-scroll-repeat
-      // data-scroll-section-inview
     >
       <div className='textbox'>
         <h4 data-scroll data-scroll-inview data-scroll-repeat>
