@@ -9,7 +9,7 @@ function App() {
   const LocomotiveOptions = {
     smooth: true,
     multiplier: 1.5,
-    touchMultiplier: 2.5, // testing now, old value was 3
+    // touchMultiplier: 3, // testing now, old value was 3
     lerp: 0.04,
     smartphone: {
       smooth: true,
