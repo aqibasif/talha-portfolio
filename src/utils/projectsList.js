@@ -1,0 +1,68 @@
+const projectsList = [
+  {
+    id: "01",
+    title: "FRATELLI - E Commerce Store",
+    description: "Turkish Figs and Chocolates",
+    techs: "ReactJS, NodeJs, MongoDB",
+    link: "https://fratelli.vercel.app",
+    img: "/img/018.png",
+    format: "1",
+  },
+  {
+    id: "02",
+    title: "Beverix - Native App",
+    description: "Beverage selling app for IOS and Android",
+    techs: "React Native, NodeJs, MongoDB",
+    link: "https://expo.io/@aqibasif/projects/Beverix?release-channel=staging",
+    img: "/img/004.png",
+    format: "2",
+  },
+
+  {
+    id: "03",
+    title: "Beverix - E Commerce Store",
+    description: "Beverage selling online store",
+    techs: "ReactJS, NodeJS, MongoDB",
+    link: "https://beverix.vercel.app",
+    img: "/img/010.png",
+    format: "1",
+  },
+  {
+    id: "04",
+    title: "MESSIX - WEBSITE",
+    description: "Basic messaging website",
+    techs: "ReactJS, NodeJs, MongoDB",
+    link: "https://messix.vercel.app",
+    img: "/img/014.png",
+    format: "2",
+  },
+  {
+    id: "05",
+    title: "Omega - website",
+    description: "Sanitary fittings",
+    techs: "ReactJS",
+    link: "https://omegasanitary.vercel.app",
+    img: "/img/007.png",
+    format: "1",
+  },
+  {
+    id: "06",
+    title: "Portfolio - Website",
+    description: "Project Gallery",
+    techs: "ReactJS",
+    link: "https://aqibasif.herokuapp.com",
+    img: "/img/006.png",
+    format: "2",
+  },
+  {
+    id: "07",
+    title: "VERk - e commerce store",
+    description: "Swedish watches",
+    techs: "ReactJS, NodeJS, MongoDB",
+    link: "https://verk-store.herokuapp.com",
+    img: "/img/002.png",
+    format: "1",
+  },
+];
+
+export default projectsList;

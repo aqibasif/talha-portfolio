@@ -9,7 +9,7 @@
 .hero-headings {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
   text-align: center;
   position: absolute;
   padding: 30px 0px;
@@ -51,22 +51,23 @@
   overflow: hidden;
   position: relative;
   margin-bottom: 250px;
-  border: 2px solid black;
+  // border: 2px solid black;
+  animation: 0.9s slide-up-fade-in 0.2s ease-out both;
 
-  &::after {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    content: "";
-    position: absolute;
-    animation: 0.9s slide-away-left 0.1s ease-out both;
-    right: 0;
-    bottom: 0;
-  }
+  // &::after {
+  //   background-color: white;
+  //   width: 100%;
+  //   height: 100%;
+  //   content: "";
+  //   position: absolute;
+  //   animation: 0.9s slide-away-left 0.1s ease-out both;
+  //   right: 0;
+  //   bottom: 0;
+  // }
 
   .hero-img {
     width: 135%;
-    animation: 1.5s zoom-down 0s cubic-bezier(0, 0.01, 0.01, 1) both;
+    // animation: 1.5s zoom-down 0s ease-out both;
   }
 }
 
@@ -90,9 +91,20 @@
   }
 }
 
+@keyframes slide-up-fade-in {
+  0% {
+    transform: translateY(350px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 @keyframes slide-in-up {
   0% {
-    transform: translateY(150%) rotate(2deg);
+    transform: translateY(-150%) rotate(2deg);
   }
   100% {
     transform: translateY(0%) rotate(0deg);

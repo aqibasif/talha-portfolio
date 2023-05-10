@@ -5,17 +5,26 @@ import "./footer.scss";
 const Footer = ({ theme = "light" }) => {
   return (
     <div data-scroll-section>
-      <div className={`intro-${theme}`}>
-        <div className='upper-footer'>
-          <div className='footer'>
-            <h3>HAVE A CREATIVE IDEA?</h3>
+      <div className={`intro-${theme} upper-footer`}>
+        <div className='footer'>
+          <div className='textbox'>
+            <h4 data-scroll data-scroll-inview data-scroll-repeat>
+              HAVE A CREATIVE IDEA?
+            </h4>
+          </div>
 
-            <div className='link-button'>
-              <h3>
+          <div className='textbox'>
+            <div
+              className='link-button'
+              data-scroll
+              data-scroll-inview
+              data-scroll-repeat
+            >
+              <h4>
                 <a href='mailto:aqibasif48@gmail.com?subject=I have a creative idea'>
                   LET'S TALK!
                 </a>
-              </h3>
+              </h4>
               <div className={`line line-${theme}`}></div>
             </div>
           </div>
