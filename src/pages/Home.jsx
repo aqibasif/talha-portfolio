@@ -6,14 +6,13 @@ import Services from "../components/Services/Services";
 import Footer from "../components/Footer/Footer";
 import MyProjects from "../components/MyProjects/MyProjects";
 
-const Home = () => {
+const Home = ({ locoScroll }) => {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Hero locoScroll={locoScroll} />
       <Introduction />
       <Services />
-      {/* Projects will come here */}
       <MyProjects />
       <Footer />
     </>

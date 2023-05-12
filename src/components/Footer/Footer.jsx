@@ -8,7 +8,12 @@ const Footer = ({ theme = "light" }) => {
       <div className={`intro-${theme} upper-footer`}>
         <div className='footer'>
           <div className='textbox'>
-            <h4 data-scroll data-scroll-inview data-scroll-repeat>
+            <h4
+              data-scroll
+              data-scroll-inview
+              data-scroll-repeat
+              data-scroll-offset='40px'
+            >
               HAVE A CREATIVE IDEA?
             </h4>
           </div>
@@ -19,6 +24,7 @@ const Footer = ({ theme = "light" }) => {
               data-scroll
               data-scroll-inview
               data-scroll-repeat
+              data-scroll-offset='40px'
             >
               <h4>
                 <a href='mailto:aqibasif48@gmail.com?subject=I have a creative idea'>
@@ -32,7 +38,12 @@ const Footer = ({ theme = "light" }) => {
       </div>
 
       <div className='lower-footer'>
-        <p>
+        <p
+          data-scroll
+          data-scroll-inview
+          data-scroll-repeat
+          data-scroll-offset='15px'
+        >
           Muhammad Aqib Asif © {new Date().getFullYear()}. Made in Pakistan.
         </p>
       </div>

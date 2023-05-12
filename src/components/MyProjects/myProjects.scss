@@ -20,11 +20,14 @@
   h1 {
     font-size: 65px;
     font-weight: bolder;
-    animation: 0.7s slide-away-up-heading 0s cubic-bezier(0, 0.01, 0.01, 1) both;
+    // animation: 0.7s slide-away-up-heading 0s cubic-bezier(0, 0.01, 0.01, 1) both;
+    transform: translateY(-150%);
+    transition: all ease 0.7s;
 
     &.is-inview {
-      animation: 0.7s slide-down-heading 0.3s cubic-bezier(0, 0.01, 0.01, 1)
-        both;
+      transform: translateY(0%);
+      // animation: 0.7s slide-down-heading 0.3s cubic-bezier(0, 0.01, 0.01, 1)
+      //   both;
     }
     // &.myprojects {
     //   transition: all ease-out 0.4s;

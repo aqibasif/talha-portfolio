@@ -18,6 +18,7 @@ const MyProjects = () => {
             data-scroll
             data-scroll-inview
             data-scroll-repeat
+            data-scroll-offset='100px, -100px'
           >
             {/* <h1 className={`myprojects ${appear ? "" : "hide-heading"}`}> */}
             MY PROJECTS

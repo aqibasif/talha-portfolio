@@ -14,15 +14,18 @@
 
   h4 {
     font-size: 28px;
-    animation: 0.7s slide-away-up-heading 0s cubic-bezier(0, 0.01, 0.01, 1) both;
+    // animation: 0.7s slide-away-up-heading 0s cubic-bezier(0, 0.01, 0.01, 1) both;
+    transition: all ease 0.7s;
+    transform: translateY(-180%);
+
+    &.is-inview {
+      transform: translateY(0%);
+      // animation: 0.7s slide-down-heading 0.25s cubic-bezier(0, 0.01, 0.01, 1)
+      //   both;
+    }
 
     &:nth-child(2) {
       text-align: right;
-    }
-
-    &.is-inview {
-      animation: 0.7s slide-down-heading 0.25s cubic-bezier(0, 0.01, 0.01, 1)
-        both;
     }
   }
 
@@ -41,14 +44,16 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  animation: 0.7s slide-away-up-heading 0s cubic-bezier(0, 0.01, 0.01, 1) both;
+  transition: all ease 0.7s;
+  transform: translateY(-180%);
 
   &.is-inview {
-    animation: 0.7s slide-down-heading 0.4s cubic-bezier(0, 0.01, 0.01, 1) both;
+    transform: translateY(0%);
+    transition-delay: 0.1s;
 
     h4 {
-      animation: 0.7s slide-down-heading 0.5s cubic-bezier(0, 0.01, 0.01, 1)
-        both;
+      transform: translateY(0%);
+      transition-delay: 0.2s;
     }
   }
 
@@ -78,7 +83,15 @@
   text-align: center;
   font-size: 14px;
   padding: 15px 8px;
-  // padding-top: 20px;
+
+  p {
+    transition: all ease 0.5s;
+    transform: translateY(180%);
+
+    &.is-inview {
+      transform: translateY(0%);
+    }
+  }
 }
 
 // ====|  Tablet  |====

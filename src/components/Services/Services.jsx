@@ -5,13 +5,23 @@ const Services = () => {
   return (
     <div className='intro' data-scroll-section>
       <div className='textbox'>
-        <h4 data-scroll data-scroll-inview data-scroll-repeat>
+        <h4
+          data-scroll
+          data-scroll-inview
+          data-scroll-repeat
+          data-scroll-offset='100px, -100px'
+        >
           SERVICES
         </h4>
       </div>
       <div>
         <div className='textbox'>
-          <p data-scroll data-scroll-inview data-scroll-repeat>
+          <p
+            data-scroll
+            data-scroll-inview
+            data-scroll-repeat
+            data-scroll-offset='100px, -100px'
+          >
             I’m working as a creative designer and full stack developer across
             UX/UI Design, Websites, IOS Andriod apps and I am constantly
             exploring new opportunities. My clients range from small startups
@@ -25,7 +35,12 @@ const Services = () => {
         </div>
 
         <div className='textbox'>
-          <p data-scroll data-scroll-inview data-scroll-repeat>
+          <p
+            data-scroll
+            data-scroll-inview
+            data-scroll-repeat
+            data-scroll-offset='100px, -100px'
+          >
             <i className='fab fa-react'></i>
             <i className='fab fa-node'></i>
             <i className='fab fa-apple'></i>
