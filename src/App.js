@@ -43,6 +43,9 @@ function App() {
     //   // }
     // });
     setLocoScroll(locomotiveScroll);
+    // setTimeout(() => {
+    //   locomotiveScroll.update();
+    // }, 1000);
   }, []);
 
   // console.log("SC", locoScroll);
