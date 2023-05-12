@@ -11,13 +11,13 @@ const Hero = ({ locoScroll }) => {
     if (args?.currentElements?.el1?.inView) {
       let scrollY = args?.scroll?.y || 0;
       heading1.current.style.transform = `scale(${
-        1 - scrollY * 0.0006 >= 0 ? 1 - scrollY * 0.00065 : 0
+        1 - scrollY * 0.0006 >= 0 ? 1 - scrollY * 0.00065 : 0.01
       })`;
       heading2.current.style.transform = `scale(${
-        1 - scrollY * 0.0004 >= 0 ? 1 - scrollY * 0.0005 : 0
+        1 - scrollY * 0.0004 >= 0 ? 1 - scrollY * 0.0005 : 0.01
       })`;
       heading3.current.style.transform = `scale(${
-        1 - scrollY * 0.0002 >= 0 ? 1 - scrollY * 0.00035 : 0
+        1 - scrollY * 0.0002 >= 0 ? 1 - scrollY * 0.00035 : 0.01
       })`;
     }
   });
