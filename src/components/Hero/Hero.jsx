@@ -6,23 +6,6 @@ const Hero = ({ locoScroll }) => {
   const heading2 = useRef(null);
   const heading3 = useRef(null);
 
-  // const heroRef = useRef(null);
-  // const { scroll: locoScroll } = useLocomotiveScroll();
-  // console.log("SCR", locoScroll);
-
-  // useEffect(() => {
-  //   locoScroll?.on("scroll", (args) => {
-  //     console.log("SC", args);
-  //     // Get all current elements : args.currentElements
-  //     // if (typeof args.currentElements["hey"] === "object") {
-  //     //   let progress = args.currentElements["hey"].progress;
-  //     //   console.log(progress);
-  //     //   // ouput log example: 0.34
-  //     //   // gsap example : myGsapAnimation.progress(progress);
-  //     // }
-  //   });
-  // }, []);
-
   locoScroll?.on("scroll", (args) => {
     // console.log("SC ARGS", args);
     if (args?.currentElements?.el1?.inView) {

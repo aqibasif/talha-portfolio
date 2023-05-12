@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import projectsList from "../../utils/projectsList";
 import Project from "./Project";
 import "./myProjects.scss";
