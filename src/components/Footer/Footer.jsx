@@ -42,7 +42,7 @@ const Footer = ({ theme = "light" }) => {
           data-scroll
           data-scroll-inview
           data-scroll-repeat
-          data-scroll-offset='15px'
+          // data-scroll-offset='15px'
         >
           Muhammad Aqib Asif © {new Date().getFullYear()}. Made in Pakistan.
         </p>

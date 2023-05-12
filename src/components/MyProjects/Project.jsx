@@ -51,7 +51,7 @@ const imageBlock = (id, img) => {
         className='project-img'
         data-scroll
         data-scroll-speed='4'
-        data-scroll-offset='-100px' // Just for testing
+        data-scroll-offset='-80px' // Just for testing
         // data-scroll-offset='-600px'
         // data-scroll-delay='0.05'
 
