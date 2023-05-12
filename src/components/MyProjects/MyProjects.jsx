@@ -5,11 +5,6 @@ import "./myProjects.scss";
 
 const MyProjects = () => {
   return (
-    // <div
-    //   // ref={projectsRef}
-    //   className='projects'
-    //   data-scroll-section
-    // >
     <>
       <div className='projects-inner-div' data-scroll-section>
         <div className='textbox'>
@@ -20,16 +15,11 @@ const MyProjects = () => {
             data-scroll-repeat
             data-scroll-offset='100px, -100px'
           >
-            {/* <h1 className={`myprojects ${appear ? "" : "hide-heading"}`}> */}
             MY PROJECTS
           </h1>
         </div>
         <div className='space' />
       </div>
-
-      {/* 
-        <br />
-        <br /> */}
 
       {projectsList.map((project) => {
         return (
@@ -46,7 +36,6 @@ const MyProjects = () => {
         );
       })}
     </>
-    // </div>
   );
 };
 

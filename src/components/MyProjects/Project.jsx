@@ -40,7 +40,7 @@ const descriptionBlock = (title, description, techs, link, format, width) => {
   );
 };
 
-const imageBlock = (id, img, offsetY) => {
+const imageBlock = (id, img) => {
   return (
     // <div className='col-md-6'>
     <div className='project-img-block' data-scroll>
@@ -51,6 +51,8 @@ const imageBlock = (id, img, offsetY) => {
         className='project-img'
         data-scroll
         data-scroll-speed='4'
+        data-scroll-offset='-200px' // Just for testing
+        // data-scroll-offset='-600px'
         // data-scroll-delay='0.05'
 
         // data-scroll-position='bottom'
@@ -63,61 +65,24 @@ const imageBlock = (id, img, offsetY) => {
 
 const Project = ({ id, title, description, techs, img, link, format }) => {
   const [width, setWidth] = useState(getWidth());
-  const [offsetY, setOffsetY] = useState(0);
-  const projectRef = useRef();
 
   useEffect(() => {
     const handleResize = () => setWidth(getWidth());
-
-    // const handleScroll = () => {
-    //   var top = window.pageYOffset;
-    //   const height = window.innerHeight;
-    //   const offSetTop = projectRef.current.offsetTop;
-
-    //   // const user = detect.parse(navigator.userAgent);
-    //   const isSafari = true;
-    //   // user.browser.family.includes("Safari");
-
-    //   // handle scrolling for large screens
-
-    //   var projectOff;
-    //   if (getWidth() < 768)
-    //     projectOff = offSetTop - height + (isSafari ? 0 : 250);
-    //   else projectOff = offSetTop - height + 150 + (isSafari ? 0 : 200);
-
-    //   if (top >= projectOff) {
-    //     var val = top - projectOff;
-    //     var movingval = -0.3 * val;
-
-    //     setOffsetY(movingval);
-    //   }
-    // };
-
     window.addEventListener("resize", handleResize);
-    // window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("resize", handleResize);
-      // window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return format === "1" && width > tabletWidth ? (
-    <div
-      // ref={projectRef}
-      className='project'
-      data-scroll-section
-    >
+    <div className='project' data-scroll-section>
       {descriptionBlock(title, description, techs, link)}
-      {imageBlock(id, img, offsetY)}
+      {imageBlock(id, img)}
     </div>
   ) : (
-    <div
-      // ref={projectRef}
-      className='project'
-      data-scroll-section
-    >
-      {imageBlock(id, img, offsetY)}
+    <div className='project' data-scroll-section>
+      {imageBlock(id, img)}
       {descriptionBlock(title, description, techs, link, format, width)}
     </div>
   );
