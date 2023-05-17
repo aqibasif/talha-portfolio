@@ -1,51 +1,36 @@
-import Home from "./pages/Home";
-// import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useEffect, useRef, useState } from "react";
-import "./locomotive-scroll.css";
 import LocomotiveScroll from "locomotive-scroll";
+import locomotiveOptions from "./utils/locomotiveOptions";
+import Loader from "./components/Loader/Loader";
+import Home from "./pages/Home";
+import "./locomotive-scroll.css";
 
 function App() {
   const containerRef = useRef(null);
 
   const [locoScroll, setLocoScroll] = useState();
-
-  const LocomotiveOptions = {
-    smooth: true,
-    multiplier: 1.65,
-    // multiplier: 1.5,
-    // touchMultiplier: 3,
-    // lerp: 0.04,
-    lerp: 0.04,
-    smartphone: {
-      smooth: true,
-    },
-    tablet: {
-      smooth: true,
-    },
-  };
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const locomotiveScroll = new LocomotiveScroll({
       el: containerRef.current,
-      ...LocomotiveOptions,
+      ...locomotiveOptions,
     });
-    // console.log("SC", locomotiveScroll);
 
-    // locoScroll?.on("scroll", (args) => {
-    //   console.log("A", args);
-
-    //   // Get all current elements : args.currentElements
-    //   // if (typeof args.currentElements["hey"] === "object") {
-    //   //   let progress = args.currentElements["hey"].progress;
-    //   //   console.log(progress);
-    //   //   // ouput log example: 0.34
-    //   //   // gsap example : myGsapAnimation.progress(progress);
-    //   // }
-    // });
     setLocoScroll(locomotiveScroll);
+
     // setTimeout(() => {
-    //   locomotiveScroll.update();
+    //   // locomotiveScroll.update();
+    //   setLoading(false)
     // }, 1000);
+
+    return () => {
+      // locomotiveScroll.destroy();
+      // locoScroll?.destroy();
+      setLocoScroll(undefined);
+      setLoading(false);
+
+    };
   }, []);
 
   // console.log("SC", locoScroll);
@@ -53,12 +38,18 @@ function App() {
   return (
     // <LocomotiveScrollProvider
     //   watch={[]}
-    //   options={LocomotiveOptions}
+    //   options={locomotiveOptions}
     //   containerRef={containerRef}
     // >
-    <main data-scroll-container ref={containerRef}>
-      <Home locoScroll={locoScroll} />
-    </main>
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <main data-scroll-container ref={containerRef}>
+          <Home locoScroll={locoScroll} />
+        </main>
+      )}
+    </>
     // </LocomotiveScrollProvider>
   );
 }

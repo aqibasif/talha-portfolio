@@ -19,6 +19,8 @@ const Hero = ({ locoScroll }) => {
       heading3.current.style.transform = `scale(${
         1 - scrollY * 0.0002 >= 0 ? 1 - scrollY * 0.00035 : 0.01
       })`;
+
+      // perspective(300px) rotateX(-30deg) TODO: try somthing like this
     }
   });
 

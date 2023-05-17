@@ -1,0 +1,14 @@
+.loader-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30vw;
+  background-color: lightgray;
+
+  @supports (height: 100svh) {
+    height: 100svh;
+  }
+}
