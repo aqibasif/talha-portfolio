@@ -27,8 +27,8 @@ function App() {
     return () => {
       // locomotiveScroll.destroy();
       // locoScroll?.destroy();
-      locomotiveScroll.init();
-      locoScroll?.init(); 
+      // locomotiveScroll.init();
+      // locoScroll?.init(); 
       setLocoScroll(undefined);
       setLoading(false);
     };
