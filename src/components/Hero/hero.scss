@@ -25,18 +25,33 @@
     font-weight: 500;
     padding: 0;
     margin: 0;
-    animation: 0.7s slide-in-up 0s cubic-bezier(0, 0.01, 0.01, 1) backwards;
     // animation: 0.8s slide-in-up 0s cubic-bezier(0.61, 1, 0.88, 1) backwards;
+    // animation: 0.7s slide-in-up 0.1s cubic-bezier(0, 0.01, 0.01, 1) backwards;
 
-    &.heading-1 {
-      animation-delay: 0.1s;
-    }
-    &.heading-2 {
-      animation-delay: 0.3s;
-    }
-    &.heading-3 {
-      animation-delay: 0.5s;
-    }
+    // &.heading-1 {
+    //   animation: 0.7s slide-in-up 0.1s cubic-bezier(0, 0.01, 0.01, 1) backwards;
+    //   // animation-delay: 0.1s;
+    // }
+    // &.heading-2 {
+    //   animation: 0.7s slide-in-up 0.3s cubic-bezier(0, 0.01, 0.01, 1) backwards;
+    //   // animation-delay: 0.3s;
+    // }
+    // &.heading-3 {
+    //   animation: 0.7s slide-in-up 0.5s cubic-bezier(0, 0.01, 0.01, 1) backwards;
+    //   // animation-delay: 0.5s;
+    // }
+  }
+  .heading-1 {
+    animation: 0.7s slide-in-up 0.1s cubic-bezier(0, 0.01, 0.01, 1) backwards;
+    // animation-delay: 0.1s;
+  }
+  .heading-2 {
+    animation: 0.7s slide-in-up 0.3s cubic-bezier(0, 0.01, 0.01, 1) backwards;
+    // animation-delay: 0.3s;
+  }
+  .heading-3 {
+    animation: 0.7s slide-in-up 0.5s cubic-bezier(0, 0.01, 0.01, 1) backwards;
+    // animation-delay: 0.5s;
   }
 }
 

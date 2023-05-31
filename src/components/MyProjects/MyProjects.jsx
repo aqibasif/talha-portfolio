@@ -21,17 +21,17 @@ const MyProjects = () => {
         <div className='space' />
       </div>
 
-      {projectsList.map((project) => {
+      {projectsList.map((project, idx) => {
         return (
           <Project
-            key={project.id}
-            id={project.id}
+            key={idx + 1}
+            id={"0" + (idx + 1)}
             title={project.title}
             description={project.description}
             techs={project.techs}
             link={project.link}
             img={project.img}
-            format={project.format}
+            format={idx % 2 === 0 ? "1" : "2"}
           />
         );
       })}

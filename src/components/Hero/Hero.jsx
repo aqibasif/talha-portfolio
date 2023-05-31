@@ -35,9 +35,9 @@ const Hero = ({ locoScroll }) => {
           data-scroll-delay='0.05'
           data-scroll-position='top'
         >
-          <h1 ref={heading1} className='heading-1'>
-            THINKER
-          </h1>
+          <div className='heading-1'>
+            <h1 ref={heading1}>THINKER</h1>
+          </div>
         </div>
         <div
           data-scroll
@@ -47,9 +47,9 @@ const Hero = ({ locoScroll }) => {
           data-scroll-delay='0.04'
           data-scroll-position='top'
         >
-          <h1 ref={heading2} className='heading-2'>
-            DESIGNER
-          </h1>
+          <div className='heading-2'>
+            <h1 ref={heading2}>DESIGNER</h1>
+          </div>
         </div>
         <div
           data-scroll
@@ -59,9 +59,9 @@ const Hero = ({ locoScroll }) => {
           data-scroll-delay='0.03'
           data-scroll-position='top'
         >
-          <h1 ref={heading3} className='heading-3'>
-            DEVELOPER
-          </h1>
+          <div className='heading-3'>
+            <h1 ref={heading3}>DEVELOPER</h1>
+          </div>
         </div>
       </div>
 

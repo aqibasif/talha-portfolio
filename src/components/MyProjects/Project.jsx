@@ -1,12 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
-// import detect from "detect.js";
+import React, { useState, useEffect } from "react";
 
 const tabletWidth = 968;
 
-function getWidth() {
+const getWidth = () => {
   const { innerWidth: width } = window;
   return width;
-}
+};
 
 const descriptionBlock = (title, description, techs, link, format, width) => {
   return (
@@ -42,10 +41,8 @@ const descriptionBlock = (title, description, techs, link, format, width) => {
 
 const imageBlock = (id, img) => {
   return (
-    // <div className='col-md-6'>
     <div className='project-img-block' data-scroll>
       <img
-        // style={{ transform: `translateY(${offsetY * 1.75}px)` }}
         src={img}
         alt='img'
         className='project-img'
@@ -59,7 +56,6 @@ const imageBlock = (id, img) => {
       />
       <h1 className='p-head'>{id}</h1>
     </div>
-    // </div>
   );
 };
 
