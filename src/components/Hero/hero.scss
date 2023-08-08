@@ -2,8 +2,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-  // padding-top: 100px;
-  // padding-bottom: 200vh;
 }
 
 .hero-headings {
@@ -20,38 +18,20 @@
   }
 
   h1 {
-    font-size: 205px;
-    line-height: 185px;
+    font-size: calc(50px + (200 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: 0.92;
     font-weight: 500;
     padding: 0;
     margin: 0;
-    // animation: 0.8s slide-in-up 0s cubic-bezier(0.61, 1, 0.88, 1) backwards;
-    // animation: 0.7s slide-in-up 0.1s cubic-bezier(0, 0.01, 0.01, 1) backwards;
-
-    // &.heading-1 {
-    //   animation: 0.7s slide-in-up 0.1s cubic-bezier(0, 0.01, 0.01, 1) backwards;
-    //   // animation-delay: 0.1s;
-    // }
-    // &.heading-2 {
-    //   animation: 0.7s slide-in-up 0.3s cubic-bezier(0, 0.01, 0.01, 1) backwards;
-    //   // animation-delay: 0.3s;
-    // }
-    // &.heading-3 {
-    //   animation: 0.7s slide-in-up 0.5s cubic-bezier(0, 0.01, 0.01, 1) backwards;
-    //   // animation-delay: 0.5s;
-    // }
   }
   .heading-1 {
     animation: 0.7s slide-in-up 0.1s cubic-bezier(0, 0.01, 0.01, 1) backwards;
-    // animation-delay: 0.1s;
   }
   .heading-2 {
     animation: 0.7s slide-in-up 0.3s cubic-bezier(0, 0.01, 0.01, 1) backwards;
-    // animation-delay: 0.3s;
   }
   .heading-3 {
     animation: 0.7s slide-in-up 0.5s cubic-bezier(0, 0.01, 0.01, 1) backwards;
-    // animation-delay: 0.5s;
   }
 }
 
@@ -66,9 +46,9 @@
   overflow: hidden;
   position: relative;
   margin-bottom: 250px;
-  // border: 2px solid black;
   animation: 0.7s slide-up-fade-in 0.2s ease-out both;
-
+  
+  // border: 2px solid black;
   // &::after {
   //   background-color: white;
   //   width: 100%;
@@ -82,7 +62,6 @@
 
   .hero-img {
     width: 135%;
-    // animation: 1.5s zoom-down 0s ease-out both;
   }
 }
 
@@ -109,7 +88,6 @@
 @keyframes slide-up-fade-in {
   0% {
     transform: translateY(30%);
-    // transform: translateY(350px);
     opacity: 0;
   }
   100% {
@@ -132,11 +110,6 @@
 @media (min-width: 450px) and (max-width: 868px) {
   .hero-headings {
     padding: 25px 0px;
-
-    h1 {
-      font-size: 120px;
-      line-height: 120px;
-    }
   }
 
   .hero-img-container {
@@ -156,11 +129,6 @@
   .hero-headings {
     padding: 30px 0px;
     gap: 8px;
-
-    h1 {
-      font-size: 60px;
-      line-height: 60px;
-    }
   }
 
   .hero-img-container {

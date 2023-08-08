@@ -28,9 +28,12 @@ function App() {
       // locomotiveScroll.destroy();
       // locoScroll?.destroy();
       // locomotiveScroll.init();
-      // locoScroll?.init(); 
-      setLocoScroll(undefined);
+      // locoScroll?.init();
+      // setLocoScroll(undefined);
       setLoading(false);
+
+      // new testing
+      locomotiveScroll.destroy();
     };
   }, []);
 
